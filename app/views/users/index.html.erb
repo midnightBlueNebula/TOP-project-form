@@ -1,0 +1,9 @@
+<table>
+    <% @users.each do |user| %>
+        <tr>
+            <td>User Name: <%= user.username %> </td>
+            <td>Email: <%= user.email %></td>
+            <td><%= link_to "Edit", "/users/#{user.id}" %></td>
+        </tr>
+    <% end %>
+</table>
